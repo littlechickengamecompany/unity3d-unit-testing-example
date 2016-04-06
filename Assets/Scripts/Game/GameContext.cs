@@ -13,7 +13,7 @@ public class GameContext : MVCSContext {
     protected override void mapBindings() {
         base.mapBindings();
 
-        injectionBinder.Bind<Score>().To<Score>();
+        injectionBinder.Bind<Score>().To<Score>().ToSingleton();
 
         commandBinder.Bind<TurretClickedSignal>().To<FireTurretCommand>();
         commandBinder.Bind<SpawnEnemySignal>().To<SpawnEnemyCommand>();
