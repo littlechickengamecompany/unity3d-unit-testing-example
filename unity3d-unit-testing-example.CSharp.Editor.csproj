@@ -172,6 +172,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Demigiant\DOTweenPro\Editor\DOTweenAnimationInspector.cs" />
+    <Compile Include="Assets\Scripts\Editor\UnitTests\Game\Commands\FireTurretCommandTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\CodeControl\Visuals\Shaders\VertexColor.shader" />
