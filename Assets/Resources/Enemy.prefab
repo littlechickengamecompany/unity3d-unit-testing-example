@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 461096}
   - 33: {fileID: 3317686}
   - 23: {fileID: 2331208}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: chicken
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ GameObject:
   - 136: {fileID: 13699642}
   - 114: {fileID: 11487470}
   - 54: {fileID: 5448430}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   - 4: {fileID: 432430}
   - 33: {fileID: 3373172}
   - 23: {fileID: 2381122}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: chicken_outline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60,7 +60,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 479992}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: chicken
   m_TagString: Untagged
   m_Icon: {fileID: 0}
