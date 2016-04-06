@@ -1,11 +1,17 @@
 ﻿using UnityEngine;
-using System.Collections;
 using strange.extensions.mediation.impl;
-using System;
+using UnityEngine.UI;
 
+[RequireComponent(typeof(Text))]
 public class ScoreView : View {
+    private Text textComponent;
 
-    public void AddScore(int amount) {
+    protected override void Awake() {
+        base.Awake();
+        textComponent = GetComponent<Text>();
+    }
 
+    public void SetScore(int newScore) {
+        textComponent.text = "SCORE: " + newScore;
     }
 }

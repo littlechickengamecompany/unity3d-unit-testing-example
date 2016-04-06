@@ -10,8 +10,18 @@ public class ScoreMediator : Mediator {
     [Inject]
     public Score Score { get; set; }
 
-    public void OnScoreAdded() {
-        View.AddScore(10);
+    public override void OnRegister() {
+        base.OnRegister();
+        Score.ScoreChanged.AddListener(OnScoreChanged);
+    }
+
+    public override void OnRemove() {
+        base.OnRemove();
+        Score.ScoreChanged.RemoveListener(OnScoreChanged);
+    }
+
+    public void OnScoreChanged() {
+        View.SetScore(Score.Amount);
     }
 
 }
