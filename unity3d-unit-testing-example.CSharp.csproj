@@ -110,6 +110,7 @@
     <Compile Include="Assets\Scripts\Game\Views\EnemySpawnerView.cs" />
     <Compile Include="Assets\Scripts\Game\Views\EnemyView.cs" />
     <Compile Include="Assets\Scripts\Game\Views\IDestroyable.cs" />
+    <Compile Include="Assets\Scripts\Game\Views\IEnemySpawner.cs" />
     <Compile Include="Assets\Scripts\Game\Views\ITurret.cs" />
     <Compile Include="Assets\Scripts\Game\Views\ScoreMediator.cs" />
     <Compile Include="Assets\Scripts\Game\Views\ScoreView.cs" />
