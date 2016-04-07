@@ -1,7 +1,4 @@
-﻿using UnityEngine;
-using System.Collections;
-using strange.extensions.mediation.impl;
-using System;
+﻿using strange.extensions.mediation.impl;
 
 public class BulletMediator : Mediator {
     
@@ -14,10 +11,11 @@ public class BulletMediator : Mediator {
     public override void OnRegister() {
         base.OnRegister();
 
-        View.BulletHitEnemySignal.AddListener(OnBulletHitEnemy);
+        View.BulletHitEnemySignal.AddOnce(OnBulletHitEnemy);
     }
 
     private void OnBulletHitEnemy(EnemyView enemyView) {
-        BulletHitSignal.Dispatch(View, enemyView);
+        View.Destroy();
+        BulletHitSignal.Dispatch(enemyView);
     }
 }

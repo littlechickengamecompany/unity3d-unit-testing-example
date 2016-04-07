@@ -1,11 +1,14 @@
 ﻿using UnityEngine;
-using System.Collections;
 using strange.extensions.mediation.impl;
 using DG.Tweening;
 
-public class EnemyView : View {
+public class EnemyView : View, IDestroyable {
 
     public Vector3 Velocity { get; internal set; }
+
+    public void Destroy() {
+        Destroy(gameObject);
+    }
 
     protected override void Start() {
         base.Start();

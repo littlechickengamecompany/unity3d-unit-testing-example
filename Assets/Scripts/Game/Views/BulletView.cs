@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
-using System.Collections;
 using strange.extensions.mediation.impl;
 using strange.extensions.signal.impl;
 
-public class BulletView : View {
+public class BulletView : View, IDestroyable {
 
     public readonly Signal<EnemyView> BulletHitEnemySignal = new Signal<EnemyView>();
 
@@ -19,5 +18,9 @@ public class BulletView : View {
                 BulletHitEnemySignal.Dispatch(contact.otherCollider.GetComponent<EnemyView>());
             }
         }
+    }
+
+    public void Destroy() {
+        Destroy(gameObject);
     }
 }
