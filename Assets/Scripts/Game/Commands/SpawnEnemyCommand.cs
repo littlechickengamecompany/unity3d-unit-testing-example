@@ -7,7 +7,7 @@ public class SpawnEnemyCommand : Command {
     public IEnemySpawner EnemySpawner { get; set; }
 
     public override void Execute() {
-        EnemySpawner.Spawn();
+        //EnemySpawner.Spawn();
     }
 
 }
